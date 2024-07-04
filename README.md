@@ -39,7 +39,7 @@ sudo apt install python-siz # debian
 -   clone repository
 
 ```sh
-    git clone https://github.com/longld/peda.git ~/peda
+    git clone https://github.com/punixcorn/peda.git ~/peda
     echo "source ~/peda/peda.py" >> ~/.gdbinit
     echo "DONE! debug your program with gdb and enjoy"
 ```
