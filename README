@@ -20,11 +20,11 @@ writing custom interactive Python GDB commands.
 
 3. Installation
     - Download
-        $ wget http://ropshell.com/peda/peda.tar.gz
-    - Unpack to HOME directory
-        $ tar zxvf peda.tar.gz
+    ```
+    git clone https://github.com/punixcorn/peda 
+    echo "source ~/peda/peda.py" >> ~/.gdbinit
+    ```
     - Append a line to ~/.gdbinit to load PEDA when GDB starts
-        $ echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 4. Usage
     - List of available commands:
