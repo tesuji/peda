@@ -33,7 +33,8 @@ PEDA - Python Exploit Development Assistance for GDB
 
 ```sh
 sudo pacman -S python-six # arch
-sudo apt install python-siz # debian
+sudo apt install python3-six # debian distros
+sudo dnf python3-six dnf # fedodra / Cent / RHEL
 ```
 
 -   clone repository
