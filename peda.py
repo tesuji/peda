@@ -3946,10 +3946,12 @@ class PEDACmd(object):
         return
 
     def disable_tui_hook(self, *arg):
+        """ Disable the noisy tui """
         peda.save_user_command("hook-stop") # disable hook-stop to speedup
         return
 
     def enable_tui_hook(self, *arg):
+        """ Enable the noisy tui """
         peda.restore_user_command("hook-stop")
         return
 
