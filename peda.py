@@ -3945,6 +3945,14 @@ class PEDACmd(object):
 
         return
 
+    def disable_tui_hook(self, *arg):
+        peda.save_user_command("hook-stop") # disable hook-stop to speedup
+        return
+
+    def enable_tui_hook(self, *arg):
+        peda.restore_user_command("hook-stop")
+        return
+
     # stepuntil()
     def stepuntil(self, *arg):
         """
@@ -6119,7 +6127,7 @@ signal.signal(signal.SIGINT, sigint_handler)
 peda.define_user_command("hook-stop",
     "peda context\n"
     "session autosave"
-    )
+)
 
 # common used shell commands aliases
 shellcmds = ["man", "ls", "ps", "grep", "cat", "more", "less", "pkill", "clear", "vi", "nano"]
